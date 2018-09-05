@@ -1,0 +1,5 @@
+mysql_host: 'localhost'
+mysql_user: 'shubham'
+# Enter your password in field below
+mysql_password: 'redhat'
+mysql_db: 'test'
