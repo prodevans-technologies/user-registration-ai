@@ -1,6 +1,6 @@
-CREATE TABLE `user_reg_ai`.`new_table` (
+CREATE TABLE `user_reg_ai`.`users` (
   `user_id` INT NOT NULL AUTO_INCREMENT,
-  `new_tablecol` VARCHAR(45) NOT NULL,
+  `name` VARCHAR(45) NOT NULL,
   `email` VARCHAR(45) NOT NULL,
   `mobile` VARCHAR(45) NULL,
   PRIMARY KEY (`user_id`),
