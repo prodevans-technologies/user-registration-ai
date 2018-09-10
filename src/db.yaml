@@ -4,3 +4,9 @@ mysql_user: 'root'
 # Enter your password in field below
 mysql_password: 'redhat@123'
 mysql_db: 'user_reg_ai'
+
+
+# Email address and password
+email:
+  sender_id: rajanikant@prodevans.com
+  password: jknsdkjns

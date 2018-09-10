@@ -68,7 +68,7 @@ def record_status():
         start = True
         return jsonify(result="started")
     else:
-        if(not video_camera.check_capture()):
+        if(start):
             return jsonify(result="completed")
         else:
             return jsonify(result="still in progress...")
