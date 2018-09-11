@@ -12,7 +12,7 @@ class RecordingThread (threading.Thread):
         self.isRunning = True
 
         self.cap = camera
-        self.path = "./images/"+file_path+"/"
+        self.path = "./photos/"+file_path+"/"
 
         # Creating the path
         if not os.path.exists(self.path):
@@ -36,7 +36,7 @@ class RecordingThread (threading.Thread):
             faces = self.face_cascade.detectMultiScale(gray, 1.3, 5)
             if ret:
                 for (x, y, w, h) in faces:
-                    # Getting the ROI for storing the images
+                    # Getting the ROI for storing the photos
                     roi_color = frame[y:y + h, x:x + w]
                     # Drowing the rectangel
                     cv2.rectangle(frame, (x, y), (x + w, y + h),(255, 0, 0), 2)
@@ -107,14 +107,14 @@ class VideoCamera(object):
 
             if save and self.counter <= 100:
                 # File path to store the image
-                path = "./images/" + email + "/"
+                path = "./photos/" + email + "/"
 
                 # Creating the path if not exists
                 if not os.path.exists(path):
                     os.mkdir(path)
 
                 for (x, y, w, h) in faces:
-                    # Getting the ROI for storing the images
+                    # Getting the ROI for storing the photos
                     roi_color = frame[y:y + h, x:x + w]
                     # Drowing the rectangel
                     cv2.rectangle(frame, (x, y), (x + w, y + h),(255, 0, 0), 2)

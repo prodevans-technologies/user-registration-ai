@@ -18,7 +18,7 @@ python -m scripts.retrain \
   --output_graph=train_meta/retrained_graph.pb \capture_status
   --output_labels=train_meta/retrained_labels.txt \
   --architecture="${ARCHITECTURE}" \
-  --image_dir=images
+  --image_dir=photos
 
 #------------------------------------------------------------------------
 # very likely get improved results (i.e. higher accuracy) by training for longer
@@ -30,7 +30,7 @@ python -m scripts.retrain \
   --output_graph=train_meta/retrained_graph.pb \
   --output_labels=train_meta/retrained_labels.txt \
   --architecture="${ARCHITECTURE}" \
-  --image_dir=images
+  --image_dir=photos
 
 
 #------------------------------------------------------------------------
@@ -39,4 +39,4 @@ python -m scripts.retrain \
 python -m scripts.label_image \
     --graph=train_meta/retrained_graph.pb  \
     --labels=train_meta/retrained_labels.txt \
-    --image=images/amit/19.jpeg
+    --image=photos/amit/19.jpeg
