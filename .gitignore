@@ -1,5 +1,3 @@
-src/tmp/
 .idea/
 *.pyc
-src/train_meta/*
 
