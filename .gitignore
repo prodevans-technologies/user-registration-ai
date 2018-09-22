@@ -1,3 +1,7 @@
 .idea/
 *.pyc
 
+src/photos/*
+src/tmp/*
+src/train_meta/bottlenecks/*
+

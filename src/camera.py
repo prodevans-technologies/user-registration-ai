@@ -2,7 +2,7 @@ import cv2
 import threading
 import os
 
-from scripts import label_image
+from src.scripts import label_image
 
 
 class RecordingThread (threading.Thread):

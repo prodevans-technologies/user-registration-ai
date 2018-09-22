@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Activating the python environment
-# source  /Users/rajanikant/venv/flask/bin/activate
+ source  /Users/rajanikant/venv/FK/bin/activate
 
 # Setting up the essential evn variables
 IMAGE_SIZE=224

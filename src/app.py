@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect, Response, jsonify
 from flask_mysqldb import MySQL
 import yaml
-from camera import VideoCamera
+from src.camera import VideoCamera
 
 video_camera = None
 global_frame = None
